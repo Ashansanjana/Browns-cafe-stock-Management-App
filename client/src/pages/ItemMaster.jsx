@@ -5,12 +5,12 @@ import { toast } from 'sonner';
 import { Database, Edit, Trash2, Plus, X } from 'lucide-react';
 
 const CATEGORIES = [
-  'BAKERY SUPPLIES', 'PANTRY & CONDIMENTS', 'BEVERAGES & DAIRY',
-  'MEAT & SEAFOOD', 'PACKAGING', 'SPICES & HERBS', 'BAKERY & BREADS',
-  'CLEANING & HYGIENE', 'SNACKS & FAST FOOD', 'OTHER'
+  'Dry Groceries', 'Dairy', 'Meat & Poultry',
+  'Beverages', 'Bakery Raw', 'Confectionery & Sweets',
+  'Packaging & Disposables', 'Cleaning & Hygiene'
 ];
 
-const UNITS = ['kg', 'liter', 'unit', 'number'];
+const UNITS = ['KG', 'GRM', 'LTR', 'ML', 'NOS', 'PKT', 'BOT', 'TIN', 'CAN', 'TUB', 'SLICE', 'ROLL', 'SASET', 'SHEETS', 'SLAB'];
 
 const ItemMaster = () => {
   const { items, addItemToState, updateItemInState, removeItemFromState, loading } = useStock();

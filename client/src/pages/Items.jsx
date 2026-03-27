@@ -3,7 +3,7 @@ import { getItems, addItem, updateItem, deleteItem } from '../api/itemsApi';
 import { toast } from 'sonner';
 import { Plus, Pencil, Trash2, ListChecks } from 'lucide-react';
 
-const UNITS = ['kg', 'liter', 'unit', 'number'];
+const UNITS = ['KG', 'GRM', 'LTR', 'ML', 'NOS', 'PKT', 'BOT', 'TIN', 'CAN', 'TUB', 'SLICE', 'ROLL', 'SASET', 'SHEETS', 'SLAB'];
 
 const ItemModal = ({ initial, onClose, onSuccess }) => {
   const [name, setName] = useState(initial?.name || '');

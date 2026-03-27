@@ -9,8 +9,6 @@ import {
   ArrowUpRightFromSquare,
   FileEdit,
   MinusCircle,
-  CalendarDays,
-  PieChart,
   Database
 } from 'lucide-react';
 
@@ -22,9 +20,7 @@ const navItems = [
   { to: '/usage-log', icon: MinusCircle, label: 'Usage Log' },
   { to: '/adj-log', icon: FileEdit, label: 'Adj Log' },
   { to: '/main-store', icon: Store, label: 'Main Store' },
-  { to: '/outlets', icon: Package, label: 'Outlets' },
-  { to: '/weekly-tracker', icon: CalendarDays, label: 'Weekly Tracker' },
-  { to: '/summary-report', icon: PieChart, label: 'Summary Report' }
+  { to: '/outlets', icon: Package, label: 'Outlets' }
 ];
 
 const Sidebar = () => {

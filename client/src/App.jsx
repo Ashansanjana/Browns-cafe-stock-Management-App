@@ -14,8 +14,6 @@ import UsageLog from './pages/UsageLog';
 import MainStore from './pages/MainStore';
 import Outlets from './pages/Outlets';
 import OutletDetail from './pages/OutletDetail';
-import WeeklyTracker from './pages/WeeklyTracker';
-import SummaryReport from './pages/SummaryReport';
 import ItemMaster from './pages/ItemMaster';
 import { StockProvider } from './context/StockContext';
 
@@ -78,12 +76,6 @@ const App = () => {
             } />
             <Route path="/outlets/:id" element={
               <PrivateRoute><AppLayout><OutletDetail /></AppLayout></PrivateRoute>
-            } />
-            <Route path="/weekly-tracker" element={
-              <PrivateRoute><AppLayout><WeeklyTracker /></AppLayout></PrivateRoute>
-            } />
-            <Route path="/summary-report" element={
-              <PrivateRoute><AppLayout><SummaryReport /></AppLayout></PrivateRoute>
             } />
           </Routes>
         </StockProvider>
